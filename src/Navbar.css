@@ -15,6 +15,7 @@ body{
 }
 .logo{
     font-family: Poppins;
+    margin-left: 3px;
     font-weight: 400;
     font-size: 18px;
     color:var(--white-color);
@@ -22,7 +23,7 @@ body{
 .Nav-bar-list{
     background-color: rgba(125, 125, 125, 0.1);
     width: 35vw;
-    height:7vh;
+    height:6.5vh;
     border-radius: 20px;
     display: flex;
     justify-content: space-evenly;
@@ -30,15 +31,15 @@ body{
 }
 .Nav-bar-list span{
     font-family: Poppins;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 14px;
     color:#fff;
 }
 .Nav-btn button{
     width:90px;
     height:40px;
     background-image: linear-gradient(to right, #008B8B,#87CEEB);;
-    border-radius: 20px;
+    border-radius: 15px;
     color: #192533;
     font-family: Poppins;
     font-weight: 400;

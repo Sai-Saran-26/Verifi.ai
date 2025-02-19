@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-image: url('homebackground.png');
+    /* background-position: center; */
+    background-size: cover;
+}
+
 .home-container{
     margin:20px;
     display: flex;
@@ -27,19 +33,21 @@
     font-weight: 400;
     font-size: 18px;
     color: #ACACAC;
+    padding-top: 3px;
 }
 .home-btn button{
     width:300px;
     height:50px;
-    border-radius: 10px !important;
-    border-image:linear-gradient(to right,#008B8B,#87CEEB,#4B5356);
-    border-image-slice: 1;
+    border-radius: 10px;
+    border:2px solid #0B898C;
     background-color: #121F2D;
     color:#87CEEB;
     font-family: Poppins;
     font-weight: 400;
     font-size: 20px;
     cursor:pointer;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 .home-btn button:hover{
     background-image: linear-gradient(to right,#0B898C,#87CEEB);
