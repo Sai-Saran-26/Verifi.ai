@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar } from '../Navbar'
+import { Navbar } from './Navbar'
 import originalimg from '../../public/original.png'
 import fakeimg from '../../public/fake.png'
 import leftArr from '../../public/leftarr.svg'
