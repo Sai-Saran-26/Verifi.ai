@@ -4,11 +4,10 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url('homebackground.png');
-    /* background-position: center; */
+    background-image: url('homebg.png');
+    background-position: center;
     background-size: cover;
 }
-
 .home-container{
     margin:20px;
     display: flex;
