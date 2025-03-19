@@ -2,6 +2,17 @@
     margin: 0;padding: 0;
     box-sizing: border-box;
 }
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    padding-left: 63px;
+    font-family: poppins;
+    font-size: 40px;
+    color:#1A989D;
+    font-weight: 600;
+}
 .work-container{
     display:flex;
     justify-content: center;
@@ -18,7 +29,7 @@
     width: 20vw;
     height: 90%;
     color: white;
-    font-family: poppins;
+    font-family: Poppins;
 }
 .step-list{
     display: flex;
@@ -37,7 +48,7 @@
     height: 100%;
     justify-content: space-around;
     width: 100%;
-    gap:10vh;
+    gap:8vh;
     align-items: center;
     font-size: 18px;
     white-space: nowrap;

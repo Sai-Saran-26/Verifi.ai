@@ -4,7 +4,7 @@ import line from '../public/lines.png'
 export const Works = () => {
   return (
     <>
-    <span>How it works</span>
+    <span className='heading'>How it works</span>
     <div className='work-container'>
         <div className='step'>
             <div className='step-line'>
