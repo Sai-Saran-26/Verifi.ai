@@ -1,12 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { Navbar } from './Navbar'
 import originalimg from '../public/original.png'
 import fakeimg from '../public/fake.png'
 import leftArr from '../public/leftarr.svg'
-import rightArr from '../public/rightarr.svg'
+import rightArr from '../public/leftarr.svg'
 import './Home.css'
 
 export const Home = () => {
+    const navigate = useNavigate(); 
   return (
     <>
     <Navbar />
@@ -20,7 +22,7 @@ export const Home = () => {
                 <span className='home-main-2'>AI detection technology</span>
             </div>
             <div className='home-btn'>
-                <button>Try Demo Now</button>
+                <button  onClick={() => navigate('/dragdrop')}>Try Demo Now</button>
             </div>
             <div className='home-imgs'>
                 <span className='Arrow-left'>

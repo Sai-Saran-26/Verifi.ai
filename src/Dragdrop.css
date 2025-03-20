@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('dragdropbg.png')!important;
+    background-size:cover;
+    /* background-color: #121F2D; */
+}
+.upload-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .drop-zone {
+    font-family: Poppins;
+    width: 90%;
+    height: 300px;
+    background-color: #b0bec533;
+    border: 2px solid #49d3ff33;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b0bec5;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .upload-label {
+    font-family: Poppins;
+    cursor: pointer;
+    color: #49d3ff;
+    margin-bottom: 20px;
+  }
+  
+  .detect-button {
+    font-family: Poppins;
+    padding: 12px 30px;
+    background: linear-gradient(to right, #0B898C, #87CEEB);
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .detect-button:hover {
+    background: linear-gradient(to right, #0B898C, #87CEEB);
+
+  }
+  
+  .hidden-input {
+    display: none;
+  }
