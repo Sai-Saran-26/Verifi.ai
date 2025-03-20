@@ -26,16 +26,44 @@ export const Dragdrop = () => {
   };
 
   // Handle "Detect Now" button click
-  const handleDetect = () => {
-    if (file) {
-      setIsAnalyzing(true); // Show buffering animation
-      setTimeout(() => {
-        navigate("/results"); // Simulate processing, then navigate
-      }, 3000); // 3-second delay
-    } else {
+  const handleDetect = async () => {
+    if (!file) {
       alert("Please upload a video file first.");
+      return;
+    }
+  
+    setIsAnalyzing(true); // Show buffering animation
+  
+    const formData = new FormData();
+    formData.append("file", file);
+  
+    try {
+      const response = await fetch("http://127.0.0.1:8000/predict", { // Replace with your API URL
+        method: "POST",
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+  
+      if (!response.ok) {
+        throw new Error("Failed to analyze the video.");
+      }
+  
+      const data = await response.json();
+      console.log("Prediction result:", data);
+  
+      // Navigate to results page with prediction data
+      navigate("/results", { state: { prediction: data.prediction, confidence: data.confidence, videoUrl: URL.createObjectURL(file)} });
+  
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred while processing the video.");
+    } finally {
+      setIsAnalyzing(false);
     }
   };
+  
 
   // Show buffering animation if analyzing
   if (isAnalyzing) {
