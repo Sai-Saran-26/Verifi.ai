@@ -1,0 +1,15 @@
+2025-02-21 20:22:21.451 | INFO     | __main__:<module>:33 - Using device: cuda
+C:\Users\rames\myprojects\deepFake\DeepFake_own\df\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+C:\Users\rames\myprojects\deepFake\DeepFake_own\df\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+2025-02-21 20:29:26.964 | INFO     | __main__:train:174 - Epoch 1/10, Train Loss: 0.5688, Val Loss: 0.5229
+2025-02-21 20:35:05.825 | INFO     | __main__:train:174 - Epoch 2/10, Train Loss: 0.3990, Val Loss: 0.3601
+2025-02-21 20:40:50.468 | INFO     | __main__:train:174 - Epoch 3/10, Train Loss: 0.3622, Val Loss: 0.2525
+2025-02-21 20:46:43.073 | INFO     | __main__:train:174 - Epoch 4/10, Train Loss: 0.2611, Val Loss: 1.2515
+2025-02-21 20:52:17.678 | INFO     | __main__:train:174 - Epoch 5/10, Train Loss: 0.2189, Val Loss: 0.4337
+2025-02-21 20:57:30.155 | INFO     | __main__:train:174 - Epoch 6/10, Train Loss: 0.2355, Val Loss: 0.3242
+2025-02-21 21:02:39.640 | INFO     | __main__:train:174 - Epoch 7/10, Train Loss: 0.1582, Val Loss: 0.2589
+2025-02-21 21:07:52.810 | INFO     | __main__:train:174 - Epoch 8/10, Train Loss: 0.1613, Val Loss: 0.3776
+2025-02-21 21:13:20.697 | INFO     | __main__:train:174 - Epoch 9/10, Train Loss: 0.1895, Val Loss: 0.3001
+2025-02-21 21:45:55.614 | INFO     | __main__:train:174 - Epoch 10/10, Train Loss: 0.0943, Val Loss: 0.4143
