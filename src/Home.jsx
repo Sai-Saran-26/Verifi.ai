@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { Navbar } from './Navbar'
 import originalimg from '../public/original.png'
 import fakeimg from '../public/fake.png'
-import leftArr from '../public/leftarr.svg'
-import rightArr from '../public/leftarr.svg'
+import leftarr from '../public/leftarr.svg'
+import rightarr from '../public/rightarr.svg'
 import './Home.css'
 
 export const Home = () => {
@@ -26,11 +26,11 @@ export const Home = () => {
             </div>
             <div className='home-imgs'>
                 <span className='Arrow-left'>
-                <span className='Arrow-index-1'>original</span> <img src={leftArr} /></span>
+                <span className='Arrow-index-1'>original</span> <img src={leftarr} /></span>
                 <img src={originalimg} width="190px" height="230px"/>
                 <img src={fakeimg} width="200px" height="230px"/>
                 <span className='Arrow-right'>
-                 <img src={rightArr} /> <span className='Arrow-index-2'>fake</span></span>
+                 <img src={rightarr} /> <span className='Arrow-index-2'>fake</span></span>
             </div>
         </div>
 
